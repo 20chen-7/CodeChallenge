@@ -1,0 +1,143 @@
+
+/* header */
+.header{
+  margin-left: 2rem;
+  font-size: 4rem;
+  font-weight: 400;
+}
+.upper-content #threshold-input{
+  width: 5rem;
+  height: 4rem;
+  font-size: 2rem;
+  text-align: center;
+  margin-left: 1rem;
+  box-sizing: border-box;
+  -webkit-box-shadow: inset 6px -6px 46px -30px rgba(0,0,0,0.6);
+  -moz-box-shadow: inset 6px -6px 46px -30px rgba(0,0,0,0.6);
+  box-shadow: inset 6px -6px 46px -30px rgba(0,0,0,0.6);
+}
+/* upper-content */
+.upper-content{
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* chunk-conatiner */
+.chunk-container{
+  display: flex;
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem 12rem auto;
+}
+
+.btn{
+  background-color: lightgrey;
+  border-radius: 2rem;
+  box-shadow: 1px 1px 12px 0px rgba(216, 208, 195, 0.78);
+  font-size: 2rem;
+  border: 0;
+  width: 13rem;
+  height: 4rem;
+  margin-top: 2rem;
+}
+
+/* left */
+.left-Col{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin-top: 5rem;
+}
+/* mid-Col */
+.mid-Col{
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.mid-Col img{
+  margin-top: 3rem;
+  width: 30rem;
+}
+/* right */
+.right-Col{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: bottom;
+  margin-top: 14rem;
+}
+
+/* mobile */
+
+@media (max-width: 480px) {
+   .header{
+    background-color:#c68eff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 4rem;
+    margin: 0;
+    padding-left: 5%;
+    -webkit-box-shadow: 3px 18px 69px -7px rgba(0,0,0,0.69);
+    -moz-box-shadow: 3px 18px 69px -7px rgba(0,0,0,0.69);
+    box-shadow: 3px 18px 69px -7px rgba(0,0,0,0.69);
+   }
+   .upper-content{
+    font-size: 3rem;
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+    margin: 20rem 3rem auto;
+  }
+  .upper-content label{
+    width: 15rem;
+    margin-bottom: 2rem;
+ 
+  }
+  .upper-content #threshold-input{
+    width: 90%;
+    height: 7rem;
+    text-align: left;
+    font-size: 3rem;
+    padding: 2rem;
+  }
+  .chunk-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 4rem;
+    font-size: 3rem;
+  }
+  .btn{
+    font-size: 3rem;
+    width: 16rem;
+    height: 6rem;
+    border-radius: 5rem;
+  }
+  .right-Col .left-Col{
+    flex:1;
+  }
+
+  .right-Col{
+    margin-top: 4rem;
+  }
+  .mid-Col{
+    order: 2;
+  }
+  .mid-Col img{
+    margin-top: 6rem;
+    width: 45rem;
+  }
+  
+
+
+}
+
+
